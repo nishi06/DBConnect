@@ -12,11 +12,21 @@ namespace DBConnect
     {
         string _sqlConnect; //接続文字を格納します。
 
-        //コンストラクター
+        /// <summary>
+        /// 接続文字列を指定せずインスタンス化します。
+        /// </summary>
+        public OleDBCommand()
+        {
+        }
+
+        /// <summary>
+        /// 接続文字列を指定してインスタンス化します。
+        /// </summary>
+        /// <param name="sqlConnect">接続文字列</param>
         public OleDBCommand(String sqlConnect)
-            {
-                _sqlConnect = sqlConnect;
-            }
+        {
+            _sqlConnect = sqlConnect;
+        }
 
         /// <summary>
         /// 接続文字を格納します。
